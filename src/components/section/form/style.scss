@@ -1,12 +1,13 @@
 .form {
-    background-color:#f0f0f3;
+    background-color: #ffffff;
     width: 35%;
-    height: 52%;
+    height: 70%;
     margin-top: 85px;
     position: absolute;
     z-index: 1;
     padding: 5px;
     border-radius: 15px;
+    align-items: center;
 
     button {
         background-color: rgb(161, 43, 136);
@@ -15,7 +16,7 @@
         border-radius: 15px;
         width: 93%;
         margin-left: 20px;
-       margin-top: 60px;
+        margin-top: 40px;
         color: #fff;
         cursor: pointer;
     }
@@ -37,13 +38,14 @@
             color: black;
             cursor: pointer;
         }
+
         button:hover {
             background-color: rgb(199, 77, 144);
             border: none;
             color: #fff;
             border-radius: 2px;
-          }
-       
+        }
+
     }
 
     &__select {
@@ -53,13 +55,14 @@
         padding-right: 10px;
         margin-bottom: 10px;
         justify-content: space-between;
-        
+
 
         &__origen {
             width: 45%;
             border: 1px solid black;
             text-align: center;
-            background-color: #fff;
+            background-color: #ffffff;
+
             select {
                 width: auto;
                 border: none;
@@ -110,8 +113,9 @@
         margin-left: 20px;
         padding-right: 10px;
         margin-bottom: 10px;
+        position: relative;
         justify-content: space-between;
-        position: absolute;
+        
 
         &__select {
             display: flex;
@@ -128,6 +132,7 @@
             border: 1px solid black;
             background-color: #fff;
             margin-right: 10px;
+
             label {
                 color: rgb(71, 70, 70);
                 font-size: small;
@@ -139,6 +144,7 @@
                 border: none;
                 background-color: transparent;
                 text-align: center;
+                background-color: #ffffff;
             }
         }
     }
@@ -147,6 +153,7 @@
         width: 95%;
         margin-left: 20px;
         padding-right: 10px;
+
         h1 {
             font-size: 30px;
         }
@@ -163,11 +170,13 @@
     border: 1px solid black;
     text-align: center;
     background-color: #fff;
+
     input {
         width: auto;
         border: none;
         background-color: transparent;
         text-align: center;
+        background-color: #fff;
     }
 
     label {
@@ -175,6 +184,7 @@
         font-size: small;
     }
 }
+
 .options {
     display: flex;
     flex-direction: column;
@@ -189,20 +199,36 @@
     border-radius: 5px;
     -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
     box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
-  }
-.Counter{
+  
+}
+.optionItem{
+   text-align: center;
+}
+.Counter {
     width: 100px;
-    height: 30px;
-    border: 1px solid #0a0a0a;
+    height: 50px;
+    margin: 5px;
     color: #0a0a0a;
     cursor: pointer;
     background-color: white;
+    position: relative;
 }
-.CounterNumber{
+
+.CounterNumber {
     margin: 2px;
     align-items: center;
     gap: 10px;
     font-size: 12px;
     color: #0a0a0a;
 }
-
+@media (max-width:850px){
+    .form{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        width: 50%;
+        height: auto;
+        align-items: center;
+        
+    }
+}

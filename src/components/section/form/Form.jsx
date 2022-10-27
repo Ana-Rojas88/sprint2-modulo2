@@ -79,22 +79,28 @@ const Form = () => {
             <div className="form__select__origen">
                 <select name="origen" onChange={handleChangeInput}>
                 <option value="">-----</option>
-                <option value="Medellin">Medellín</option>
-                    <option value="Bogota">Bógota</option>
-                    <option value="Cucuta">Cucuta</option>
+                <option value="Medellín">Medellín</option>
+                    <option value="Bogotá">Bogotá</option>
+                    <option value="Cúcuta">Cúcuta</option>
                     <option value="Cartagena">Cartagena</option>
                     <option value="Cali">Cali</option>
+                    <option value="Montería">Montería</option>
+                    <option value="Bucaramanga">Bucaramanga</option>
+                    <option value="San Andrés">San Andrés</option>
                 </select><br />
                 <label>Origen</label>
             </div>
             <div className="form__select__destino"> 
                 <select name="destino" onChange={handleChangeInput}>
                     <option value="">---</option>
-                    <option value="Bogota">Bógota</option>
-                    <option value="Medellin">Medellín</option>
-                    <option value="Cucuta">Cucuta</option>
+                    <option value="Bogotá">Bogotá</option>
+                    <option value="Medellín">Medellín</option>
+                    <option value="Cúcuta">Cúcuta</option>
                     <option value="Cartagena">Cartagena</option>
                     <option value="Cali">Cali</option>
+                    <option value="Montería">Montería</option>
+                    <option value="Bucaramanga">Bucaramanga</option>
+                    <option value="San Andrés">San Andrés</option>
                 </select><br />
                 <label>Destino</label>
             </div>
@@ -125,7 +131,7 @@ const Form = () => {
                 <span>Niños</span>
                 <span disabled={options.children <= 1} onClick={() => { handleOption("children", "d") }} className="Counter">-</span>
                 <span className="CounterNumber">{options.children}</span>
-                <span onClick={() => { handleOption("children", "i") }} className="Counter">+</span>
+                <span onClick={() => { handleOption("children", "i") }} className="counter">+</span>
             </div>
             <div className="optionItem">
                 <span>Bebés</span>

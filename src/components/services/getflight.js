@@ -1,5 +1,5 @@
 import axios from "axios";
-const URL_API = "http://localhost:3004/vuelos";
+const URL_API = "https://datavuelos-production-6366.up.railway.app/vuelos";
 export const searchFligths = async (flight = {}) => {
   let urlSearch = `${URL_API}?`;
   for (const key in flight) {
